@@ -44,7 +44,7 @@ public:
         result.push(current->data);
     }
     void print(){
-        while (1) {
+        while (true) {
             cout << result.front();
             result.pop();
             if (!result.empty())
@@ -107,18 +107,21 @@ int main() {
         cin >> start_y;
 
         matrix = makeMatrix(width, height);
-        tree.root = makeTree(matrix, tree.root, start_x, start_y, 0);
-
         cin >> command;
-        if (command == "Pre-order-traversal"){
-            tree.preOrder(tree.root);
-            tree.print();
-        } else if (command == "Post-order-traversal"){
-            tree.postOrder(tree.root);
-            tree.print();
-        } else if (command == "Level-order-traversal"){
-            tree.levelOrder();
-            tree.print();
+
+        if (matrix[start_y][start_x] != 0) {
+            tree.root = makeTree(matrix, tree.root, start_x, start_y, 0);
+
+            if (command == "Pre-order-traversal") {
+                tree.preOrder(tree.root);
+                tree.print();
+            } else if (command == "Post-order-traversal") {
+                tree.postOrder(tree.root);
+                tree.print();
+            } else if (command == "Level-order-traversal") {
+                tree.levelOrder();
+                tree.print();
+            }
         }
     }
 
