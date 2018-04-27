@@ -1,5 +1,5 @@
 # Matrix to Tree Converter
-### Description
+## Description
 - Given
   - A matrix of digits
   - A starting non-zero digit
@@ -12,7 +12,7 @@
     - Post-order-traversal
 - Example
 ![convert_example](./images/image.png)
-### Input
+## Input
 ![input](./images/input.png)
 
 width < 100 and height <100 
@@ -22,7 +22,7 @@ Traversal method can be one of the following:
 * "Level-order-traversal"
 * "Pre-order-traversal"
 * "Post-order-traversal"
-### Output
+## Output
 ![output](./images/output.png)
 
 print out the tree traversal
