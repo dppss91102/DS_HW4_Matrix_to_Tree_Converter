@@ -26,6 +26,7 @@ Traversal method can be one of the following:
 ![output](./images/output.png)
 
 print out the tree traversal
+##
 ### Sample Input
 ```
 6
